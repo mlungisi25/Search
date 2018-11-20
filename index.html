@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+
+<style>
+@media screen and (max-width:600px){
+	.header ul{
+	float:none;
+	width:100%;
+}
+}
+@media screen and (min-width:900px){
+	.header ul{
+	float:none;
+	width:50%;
+}
+@media screen and (min-width:900px){
+	.header bar1{
+	float:none;
+	width:50%;
+}
+}
+@media screen and (min-width:900px){
+	.header bar2{
+	float:none;
+	width:50%;
+}
+}@media screen and (min-width:900px){
+	.header bar3{
+	float:none;
+	width:50%;
+}
+}
+@media screen and (max-width:600px){
+	.header ul{
+	float:none;
+	width:100%;
+}
+}
+
+
+	h1{text-align:center;
+		color:#ff0000;
+
+	  }	
+header{
+	text-align:right;
+	background-color:#cccccc;
+			padding:15px;
+
+	}
+	menu{
+		float:right;
+		width:50px;
+		height:50px;
+		background-color:white;
+	}
+		
+.container {
+    display: inline-block;
+    cursor: pointer;
+	float:right;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0px;
+    overflow: hidden;
+	float:left;
+	margin-top:5px;
+	
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a:hover{
+	color:green;
+	}
+footer{
+	background-color:#986834;
+	padding:10px;
+	padding-bottom:25px;
+	}
+	
+ .button:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button {
+    border: none; 
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+	box-show: 0 9px #999;
+    border-radius:15px;
+
+}
+.btn  {background-color: #4CAF50;} 
+.btn:hover {background-color: blue;}
+</style>
+<header>
+<div>
+<ul>
+	<li><a class="active" href="#top">All</a></li>
+	<li><a href="#middle">Images</a></li>
+	<li><a href="#Bottum">Videos</a><li>
+	<li><a href="#Bottum">Maps</a><li>
+	<li><a href="#Bottum">News</a><li>
+
+	</ul>
+  </div>
+  
+  <div class="menu">
+  <i class='fa fa-user-circle' style='font-size:35px; color:#32cd32; padding-top:10px;';></i>
+  &nbsp &nbsp
+	<div class="container menu" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  </div>
+  </div>
+
+</header>
+
+</head>
+<body background="image\it.jpg">
+<br>
+
+<br>
+<h1 ><span style="color:#ff6600">SEARCH</span> <span style="color:Fuchsia
+" >ENGINE</span></h1>
+<br>
+<center><img src="image\code-logo.png";  height="150" width="250" </center>  
+<br><br>
+  <center> 
+ <input   type="text" placeholder=" Search.." name="search2" style="padding:15px; width:60%; ">
+  </center> 
+  <br>
+<br><br>  
+<center>
+  <button class="button btn">Search</button>
+
+  &nbsp 
+  <button class="button btn">Clear</button>
+  
+
+</center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+	<p><span style="float:left; padding-bottom:25px;">Advertising | Business | About</span><span style="float:right;">Terms  |  Setting</span></p>
+</footer>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+</body>
+</html>
